@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { listCaseStudies, listCategories } from '../Services/DisplayServices';
 import { NotificationManager } from "react-notifications";
 import CategoryList from './CategoryList';
@@ -9,9 +9,9 @@ function HomePage(){
 
     const [categoryList, setCategoryList]= useState([]);
     const [caseStudyList, setCaseStudyList]= useState([]);
+    const [selectedCategory,setSelectedCategory]=useState("All");
 
     useEffect(()=>{
-
         listCategories().then((res) => {
             if(res)
             {
@@ -28,7 +28,6 @@ function HomePage(){
     },[])
 
     useEffect(()=>{
-
         listCaseStudies().then((res) => {
             if(res)
             {
@@ -44,12 +43,15 @@ function HomePage(){
           });
     },[])
 
+    function filterContent(filter){
+        setSelectedCategory(filter);
+    }
 
     return(
         <>
-        <p class="text-white font-bold text-6xl tracking-widest p-8">Work</p>
-         <CategoryList categories={categoryList}/>
-         <CaseStudyList caseStudies={caseStudyList}/>
+            <p class="text-white font-bold text-6xl tracking-widest p-8">Work</p>
+            <CategoryList categories={categoryList} filterContent={filterContent}/>
+            <CaseStudyList caseStudies={caseStudyList} selectedCategory={selectedCategory}/>
         </>
     )
 

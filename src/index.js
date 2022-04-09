@@ -5,12 +5,13 @@ import './index.css';
 import HomePage from './Views/HomePage'; 
 import reportWebVitals from './reportWebVitals';
 import { ReactComponent as YourSvg } from '../src/Assets/asset1.svg';
+import { Container } from 'postcss';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode >
-    <div class="bg-black">
+    <div>
     <HomePage />
     </div>
   </React.StrictMode>
