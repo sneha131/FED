@@ -47,10 +47,9 @@ function HomePage(){
 
     return(
         <>
-        <h1>Hello</h1>
+        <p class="text-white font-bold text-6xl tracking-widest p-8">Work</p>
          <CategoryList categories={categoryList}/>
          <CaseStudyList caseStudies={caseStudyList}/>
-
         </>
     )
 
