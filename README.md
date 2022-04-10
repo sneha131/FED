@@ -77,7 +77,7 @@ This page includes a function to retreive data from API using axios
 
 This page contains 2 functions for category API call and casestudy API call
 
-##References
+## References
 
 CaseStudy API: https://plankdesign.com/wp-json/plank/v1/fed-test/case-studies \
 Category API: https://plankdesign.com/wp-json/plank/v1/fed-test/categories \
