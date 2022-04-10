@@ -7,7 +7,7 @@ function CategoryList(props){
     const [selectedCategory, setSelectedCategory]=useState("All");
     useEffect(()=>{
         props.filterContent(selectedCategory)
-    },[selectedCategory]);
+    },[selectedCategory]); //calling filtercontent function from homepage to update category selection
 
     return(
         <div className="border-b-2 w-fit pr-4 xl:m-8">

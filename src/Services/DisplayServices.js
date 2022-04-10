@@ -1,4 +1,4 @@
-import {getApiCall} from "../Utils/Api";
+import {getApiCall} from "../Utils/Api"; 
 
 export const listCaseStudies = async () => {
     try {
@@ -7,7 +7,7 @@ export const listCaseStudies = async () => {
     } catch (e) {
       throw e;
     }
-  };
+  }; //function to retrive case studies from api
 
   export const listCategories = async () => {
     try {
@@ -16,4 +16,4 @@ export const listCaseStudies = async () => {
     } catch (e) {
       throw e;
     }
-  };
+  }; //function to retrive categories from api

@@ -25,7 +25,7 @@ function HomePage(){
               NotificationManager.error("", 'Error', 5000);
             }      
           });
-    },[])
+    },[]) //populating categories
 
     useEffect(()=>{
         listCaseStudies().then((res) => {
@@ -41,7 +41,7 @@ function HomePage(){
               NotificationManager.error("", 'Error', 5000);
             }      
           });
-    },[])
+    },[]) //populating case studies
 
     function filterContent(filter){
         setSelectedCategory(filter);
@@ -50,7 +50,7 @@ function HomePage(){
     return(
         <div className=" w-screen homepage2 p8" >
             <div className="homepage3">
-                <p className="text-white font-bold text-6xl tracking-widest p-2 xl:m-4">Work</p>
+                <p className="text-white font-bold text-6xl tracking-widest p-2 xl:m-4">Work</p> 
                 <CategoryList categories={categoryList} filterContent={filterContent}/>
                 <CaseStudyList caseStudies={caseStudyList} selectedCategory={selectedCategory}/>
             </div>

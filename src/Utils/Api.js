@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'; //importing Axios
 
 export const getApiCall = async (endpoint) => {
     let options = {
@@ -8,4 +8,4 @@ export const getApiCall = async (endpoint) => {
     };
     const response = await axios(options);
     return response;
-  };
+  }; //Function to create axios api call
