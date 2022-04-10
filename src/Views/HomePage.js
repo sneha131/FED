@@ -48,11 +48,11 @@ function HomePage(){
     }
 
     return(
-        <>
-            <p class="text-white font-bold text-6xl tracking-widest p-8">Work</p>
+        <div className="w-screen">
+            <p class="text-white font-bold text-6xl tracking-widest pt-8 pl-8">Work</p>
             <CategoryList categories={categoryList} filterContent={filterContent}/>
             <CaseStudyList caseStudies={caseStudyList} selectedCategory={selectedCategory}/>
-        </>
+        </div>
     )
 
 }

@@ -4,7 +4,7 @@ function NoData(){
 
     return(
         <div>
-            <label>No Data</label>
+            <label class="text-white m-4">No Case-Studies under this Category</label>
         </div>
     );
 
