@@ -38,6 +38,10 @@
    
 3. Assets\
    i. placeholder-image.svg
+  ii. asset1.svg
+ iii. asset2.svg
+  iv. asset3.svg
+   v. arrow-icon.svg
    
 4. Utils\
    i. Api.js
