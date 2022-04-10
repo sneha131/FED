@@ -48,10 +48,12 @@ function HomePage(){
     }
 
     return(
-        <div className="w-screen homepage2" >
-            <p className="text-white font-bold text-6xl tracking-widest pt-8 pl-8">Work</p>
-            <CategoryList categories={categoryList} filterContent={filterContent}/>
-            <CaseStudyList caseStudies={caseStudyList} selectedCategory={selectedCategory}/>
+        <div className=" w-screen homepage2 p8" >
+            <div className="homepage3">
+                <p className="text-white font-bold text-6xl tracking-widest p-2 xl:m-4">Work</p>
+                <CategoryList categories={categoryList} filterContent={filterContent}/>
+                <CaseStudyList caseStudies={caseStudyList} selectedCategory={selectedCategory}/>
+            </div>
         </div>
     )
 

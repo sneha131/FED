@@ -17,9 +17,8 @@ code {
     monospace;
 }
 
-.homepage {
+.homepage3 {
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
   background-attachment:fixed;
   background-position-x: right;
   background-position-y: bottom;
@@ -31,7 +30,6 @@ code {
 
 .homepage2 {
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
   background-attachment:fixed;
   background-position-x: right;
   background-position-y: top;
@@ -40,9 +38,8 @@ code {
   position: relative;
 }
 
-.homepage3{
+.homepage{
   background-repeat: no-repeat;
-  background-blend-mode: luminosity;
   background-attachment:fixed;
   background-position-x: left;
   background-position-y: bottom;

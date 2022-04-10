@@ -19,7 +19,7 @@ function CaseStudyList(props){
 
     return(
         <div className="homepage3">
-            <div className="flex flex-wrap container m-6 items-center">
+            <div className="flex flex-wrap container items-center">
                 {((filteredList.length<1)
                 ?<NoData/>
                 :(filteredList).map((casestudy,id)=><CardComponent key={id} cslist={casestudy}/>))}
