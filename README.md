@@ -81,4 +81,5 @@ This page contains 2 functions for category API call and casestudy API call
 
 CaseStudy API: https://plankdesign.com/wp-json/plank/v1/fed-test/case-studies \
 Category API: https://plankdesign.com/wp-json/plank/v1/fed-test/categories \
-Tailwind: https://tailwindcss.com/docs
+Tailwind: https://tailwindcss.com/docs \
+Font: https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap
