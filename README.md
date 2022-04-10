@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# FrontEnd Project Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+1. Display the CaseStudies List
+2. Filter the CaseStudies with Categories Provided
+3. Navigate to CaseStudies
+4. Implement Animation to components
 
-In the project directory, you can run:
+## RoadMap
 
-### `npm start`
+1. Run the project
+2. Click on different Categories to filter the CaseStudies
+3. Click on "Learn More" to navigate to a particular CaseStudy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies/Libraries
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Reactjs
+2. HTML/CSS
+3. Tailwind to style components
+4. Axios for Data retrieval
+5. Postman for testing API
+6. Project developed in Visual Studio Code
+7. Project uploaded on GitHub
 
-### `npm test`
+## Drilldown/Roadmap of Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Folders and Pages
 
-### `npm run build`
+1. Views\
+    i. HomePage.js\
+   ii. CategoryList.js\
+  iii. CaseStudyList.js\
+   iv. NoData.js
+   
+2. Components\
+   i. CardComponent.js
+   
+3. Assets\
+   i. placeholder-image.svg
+   
+4. Utils\
+   i. Api.js
+   
+5. Services\
+   i. DisplayService.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The primary page that will load which includes the home page that we see on the browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### HomePage.js
 
-### `npm run eject`
+This page calls API to retrive data with the help of DisplayService Page and display the data with CategoryList and CaseStudyList
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### CategoryList.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+CategoryList Page is responsible to display the categories on the page and handle onclick events for different categories
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### CaseStudy.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This page is used to display list of casestudies on the basis of category selection 
 
-## Learn More
+### NoData.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This page is used when there are no data to display
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### CardComponent.js
 
-### Code Splitting
+This is a designed section of a casestudy which is called each time a casestudy is to be displayed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Api.js
 
-### Analyzing the Bundle Size
+This page includes a function to retreive data from API using axios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### DisplayService.js
 
-### Making a Progressive Web App
+This page contains 2 functions for category API call and casestudy API call
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## References
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CaseStudy API: https://plankdesign.com/wp-json/plank/v1/fed-test/case-studies \
+Category API: https://plankdesign.com/wp-json/plank/v1/fed-test/categories \
+Tailwind: https://tailwindcss.com/docs \
+Font: https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap
