@@ -1,7 +1,5 @@
 # FrontEnd Project Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Objective
 
 1. Display the CaseStudies List
@@ -81,6 +79,6 @@ This page contains 2 functions for category API call and casestudy API call
 
 ##References
 
-CaseStudy API: https://plankdesign.com/wp-json/plank/v1/fed-test/case-studies
-Category API: https://plankdesign.com/wp-json/plank/v1/fed-test/categories
+CaseStudy API: https://plankdesign.com/wp-json/plank/v1/fed-test/case-studies \
+Category API: https://plankdesign.com/wp-json/plank/v1/fed-test/categories \
 Tailwind: https://tailwindcss.com/docs
